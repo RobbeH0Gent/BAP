@@ -139,50 +139,68 @@ Dit iteratieve, 'start small, scale up'-principe is terug te vinden in meerdere 
 Het onderzoek bestaat uit vier fases, die telkens gekoppeld zijn aan specifieke onderzoekstechnieken:
 
 \subsection*{Fase 1: Analyse van de huidige situatie}
-\begin{itemize}
-  \item Literatuurstudie rond sportdata, datagedreven besluitvorming en bestaande frameworks.
-  \item Interviews van vertegenwoordigers of belanghebbenden van minstens twee sportclubs of federaties.
-  \item Analyse van de soorten data die sportorganisaties momenteel verzamelen.
-\end{itemize}
+% \begin{itemize}
+%   \item Literatuurstudie rond sportdata, datagedreven besluitvorming en bestaande frameworks.
+%   \item Interviews van vertegenwoordigers of belanghebbenden van minstens twee sportclubs of federaties.
+%   \item Analyse van de soorten data die sportorganisaties momenteel verzamelen.
+% \end{itemize}
+In de eerste fase wordt de huidige situatie binnen sportorganisaties onderzocht.
+Dit gebeurt door een uitgebreide literatuurstudie uit te voeren naar bestaande inzichten rond sportdata, datagedreven besluitvorming en relevante analytische frameworks.
+Deze theoretische basis wordt aangevuld met praktijkinformatie door gesprekken te voeren met vertegenwoordigers of belanghebbenden van minstens twee sportclubs of sportfederaties.
+Tijdens deze interviews wordt nagegaan welke soorten data momenteel worden verzameld, voor welke doeleinden deze gegevens worden gebruikt en in welke mate organisaties reeds ervaring hebben met datagebaseerde besluitvorming.
+Door deze combinatie van literatuur en praktijkobservaties ontstaat een helder beeld van de uitgangspositie en van de mate waarop data vandaag structureel worden ingezet.
 
 \subsection*{Fase 2: Identificatie van knelpunten en behoeften}
-\begin{itemize}
-  \item Thematische analyse van de interviewresultaten.
-  \item Evaluatie van dataflows, databronnen en aanwezige expertise.
-  \item Opstellen van requirements voor een haalbaar datamodel.
-\end{itemize}
+% \begin{itemize}
+%   \item Thematische analyse van de interviewresultaten.
+%   \item Evaluatie van dataflows, databronnen en aanwezige expertise.
+%   \item Opstellen van requirements voor een haalbaar datamodel.
+% \end{itemize}
+In de tweede fase ligt de nadruk op het identificeren van de voornaamste knelpunten en behoeften die in de interviews naar voren komen.
+De verzamelde informatie wordt thematisch geanalyseerd, waarna een evaluatie wordt gemaakt van bestaande dataflows, databronnen en de aanwezige expertise binnen de betrokken organisaties.
+Op basis van deze analyse worden zowel de functionele als technische requirements opgesteld waaraan een haalbaar datamodel of analyseproces moet voldoen.
+Deze fase vormt een cruciale overgang tussen het begrijpen van de huidige situatie en de ontwikkeling van een concreet, technisch onderbouwde oplossing.
 
 \subsection*{Fase 3: Proof-of-concept en experimentele analyse}
-\begin{itemize}
-  \item Selectie en preprocessing van sportdata.
-  \item Toepassen van datagedreven analysetools zoals:
-      \begin{itemize}
-          \item regressiemodellen,
-          \item clustering (bv. k-means voor spelersprofielen),
-          \item anomaly detection voor blessurerisico,
-          \item dashboards in Python (pandas, scikit-learn, eventueel PowerBI).
-          \item ...
-      \end{itemize}
-  \item Evaluatie van de bruikbaarheid en uitvoerbaarheid voor niet-experts.
-\end{itemize}
+% \begin{itemize}
+%   \item Selectie en preprocessing van sportdata.
+%   \item Toepassen van datagedreven analysetools zoals:
+%       \begin{itemize}
+%           \item regressiemodellen,
+%           \item clustering (bv. k-means voor spelersprofielen),
+%           \item anomaly detection voor blessurerisico,
+%           \item dashboards in Python (pandas, scikit-learn, eventueel PowerBI).
+%           \item ...
+%       \end{itemize}
+%   \item Evaluatie van de bruikbaarheid en uitvoerbaarheid voor niet-experts.
+% \end{itemize}
+De derde fase bestaat uit de ontwikkeling van een proof-of-concept waarin wordt onderzocht hoe sportdata op een praktische en haalbare manier kan worden geanalyseerd.
+Eerst wordt relevante data geselecteerd en voorbewerkt, zodat deze klaar is voor analyse.
+Vervolgens worden verschillende analysetechnieken toegepast, waaronder regressiemodellen, clusteringmethoden zoals k-means voor het onderscheiden van spelersprofielen, en anomaly detection om mogelijke blessurerisico's te identificeren.
+De resultaten worden ondersteund door visualisaties en dashboards die worden ontwikkeld in Python met behulp van onder meer pandas, NumPy, scikit-learn en Matplotlib.
+Waar nodig wordt aanvullende tooling zoals PowerBI of Streamlit gebruikt om de interpretatie te verbeteren.
+Deze fase heeft als doel om inzicht te geven in welke technieken haalbaar, begrijpelijk en bruikbaar zijn voor organisaties die niet over diepgaande data-expertise beschikken.
 
 \subsection*{Fase 4: Uitwerking van een relevant stappenplan}
-\begin{itemize}
-  \item Samenvatten van succesfactoren uit de literatuur.
-  \item Integreren van empirische bevindingen
-  \item Formuleren van een concreet stappenplan inclusief:
-      \begin{itemize}
-          \item databeheer,
-          \item toolselectie,
-          \item noodzakelijke rollen en competenties,
-          \item implementatievolgorde.
-      \end{itemize}
-\end{itemize}
+% \begin{itemize}
+%   \item Samenvatten van succesfactoren uit de literatuur.
+%   \item Integreren van empirische bevindingen
+%   \item Formuleren van een concreet stappenplan inclusief:
+%       \begin{itemize}
+%           \item databeheer,
+%           \item toolselectie,
+%           \item noodzakelijke rollen en competenties,
+%           \item implementatievolgorde.
+%       \end{itemize}
+% \end{itemize}
+In de vierde en laatste fase wordt op basis van zowel de literatuur als de empirische bevindingen een concreet en toepasbaar stappenplan opgesteld dat sportorganisaties moet helpen hun datagebruik te professionaliseren.
+Dit stappenplan bevat richtlijnen voor databeheer, de selectie van geschikte tools, de rollen en competenties die vereist zijn binnen de organisatie en een realistische volgorde waarin datagedreven processen kunnen worden geïmplementeerd.
+Door theorie en praktijk te integreren, resulteert deze fase in een methode die zowel technisch onderbouwd als praktisch haalbaar is voor kleine en middelgrote sportomgevingen.
 
 \subsection*{Tools en tijdsplanning}
 De technische uitvoering gebeurt voornamelijk in Python met libraries zoals pandas, NumPy, scikit-learn en Matplotlib.
 Voor datavisualisatie kan zowel PowerBI als Streamlit worden gebruikt.
-De totale verwachte doorlooptijd bedraagt ongeveer 14 weken, deze is opgesplitst in onderzoek, ontwikkeling, analyse en rapportering.
+De totale verwachte doorlooptijd bedraagt ongeveer veertien weken, deze is opgesplitst in onderzoek, ontwikkeling, analyse en rapportering.
 
 %---------- Verwachte resultaten ----------------------------------------------
 \section{Verwacht resultaat, conclusie}%
