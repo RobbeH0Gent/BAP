@@ -45,9 +45,9 @@
 % Dit leidt tot suboptimale coachingbeslissingen, beperkte strategische inzichten en een lagere efficiëntie in de werking van een club.
 % \textcolor{hoofdvraagkleur}{De onderzoeksvraag die hieruit volgt is: \textbf{Hoe kunnen sportorganisaties hun bestaande data optimaler inzetten om de kwaliteit van besluitvorming en sportprestaties te verbeteren?}}
 
-Voetbalclubs verzamelen vandaag de dag steeds grotere hoeveelheden data. Deze gegevens omvatten wedstrijdstatistieken, medische en fysieke meetwaarden, trainingsvolumes, GPS-tracking en wedstrijdbeelden.
-Uit al bestaande literatuur blijkt echter dat veel voetbalclubs deze data niet of slechts gedeeltelijk benutten, waardoor waardevolle inzichten verloren gaan ~\autocite{Fried2016}.
-Dit vormt een probleem aangezien datagedreven werken ook binnen het voetbal steeds belangrijker wordt voor zowel prestatieoptimalisatie als operationele besluitvorming.
+Voetbalclubs verzamelen steeds grotere hoeveelheden data. Deze gegevens omvatten wedstrijdstatistieken, medische en fysieke meetwaarden, trainingsvolumes, GPS-tracking en wedstrijdbeelden.
+Uit bestaande literatuur blijkt echter dat veel voetbalclubs deze data niet of slechts gedeeltelijk benutten, waardoor waardevolle inzichten verloren gaan ~\autocite{Fried2016}.
+Dit vormt een probleem, aangezien datagedreven werken ook binnen het voetbal steeds belangrijker wordt voor zowel prestatieoptimalisatie als operationele besluitvorming.
 
 De doelgroep van dit onderzoek bestaat uit voetbalclubs die reeds data hebben verzameld of data verzamelen, maar moeilijkheden ervaren bij het verwerken, analyseren of interpreteren van deze data.
 Deze clubs beschikken vaak niet over gespecialiseerde data-expertise of geschikte tools, waardoor de drempel naar datagedreven werken nog hoog blijft.
@@ -93,12 +93,12 @@ Daarbij wordt onderzocht in welke mate clubs gebruikmaken van wedstrijdstatistie
 Dit omvat zowel technische beperkingen, zoals datakwaliteit of fragmentatie, als organisatorische uitdagingen zoals het ontbreken van expertise of geschikte tools.
 
 \textcolor{deelvraagkleur}{Binnen het oplossingsdomein richt het onderzoek zich op de vraag welke analysetechnieken en tools haalbaar zijn voor voetbalclubs die niet beschikken over diepgaande data-ervaring.}
-Hierbij wordt bekeken welke methoden voldoende eenvoudig, robuust en praktisch bruikbaar zijn om in een realistische voetbalcontext toegepast te worden.
+Daarbij wordt bekeken welke methoden voldoende eenvoudig, robuust en praktisch bruikbaar zijn om in een realistische voetbalcontext toegepast te worden.
 \textcolor{deelvraagkleur}{Tot slot wordt onderzocht welke factoren bepalend zijn voor een succesvolle en duurzame implementatie van datagedreven besluitvorming binnen voetbalclubs.}
 Hierbij gaat het zowel om organisatorische voorwaarden, zoals rollen en processen, als om technische aspecten, waaronder databeheer en toolselectie.
 
 De doelstelling van deze bachelorproef is om een \textit{praktisch toepasbaar stappenplan} en een \textit{proof-of-concept datagedreven analysemodel} te ontwikkelen waarmee voetbalclubs hun datagebruik kunnen professionaliseren.
-Het eindresultaat moet concreet toepasbaar zijn binnen een breed schaal aan voetbalomgevingen en voldoende technische diepgang bevatten om als AI \& Data Engineering-project te gelden.
+Het eindresultaat moet concreet toepasbaar zijn binnen een brede schaal van voetbalomgevingen en voldoende technische diepgang bevatten om als AI \& Data Engineering-project te gelden.
 
 %---------- Stand van zaken ---------------------------------------------------
 
@@ -161,31 +161,31 @@ Datagedreven besluitvorming speelt een steeds grotere rol binnen het moderne voe
 Voetbalclubs verzamelen vandaag uiteenlopende vormen van data, waaronder wedstrijdstatistieken, trackinggegevens, medische en fysieke meetwaarden en videoanalyse.
 Deze evolutie wordt gedreven door technologische vooruitgang en de toenemende nood aan objectieve ondersteuning van sportieve en operationele beslissingen.
 Tegelijkertijd toont de literatuur aan dat het louter verzamelen van data niet volstaat om tot betere prestaties te komen. 
-De meerwaarde onstaat pas wanneer deze data op een gestructureerde en doordachte manier wordt geanalyseerd en geïnterpreteerd~\autocite{Alamar2013}.
+De meerwaarde ontstaat pas wanneer deze data op een gestructureerde en doordachte manier worden geanalyseerd en geïnterpreteerd~\autocite{Alamar2013}.
 
 Alamar beschrijft sport analytics als het systematisch inzetten van data-analyse ter ondersteuning binnen sportorganisaties.
-Hoewel deze benadering niet exclusief op voetbal gericht is, biedt ze een relevant theoretische kader voor het begrijpen van datagedreven processen binnen voetbalclubs.
+Hoewel deze benadering niet exclusief op voetbal gericht is, biedt ze een relevant theoretisch kader voor het begrijpen van datagedreven processen binnen voetbalclubs.
 Volgens Alamar ligt de uitdaging niet enkel in het analyseren van de data maar ook in het vertalen van analytische inzichten naar praktische beslissingen die aansluiten bij de dagelijkse werking van sportteams~\autocite{Alamar2013}.
 
-Binnen voetbalonderzoek ligt de focus vaal op prestatieanalyse en matchanalyse.
+Binnen voetbalonderzoek ligt de focus vaak op prestatieanalyse en matchanalyse.
 Rein en Memmert benadrukken dat elitevoetbal geconfronteerd wordt met een exponentiële toename aan data, onder meer door tracking- en sensortechnologie.
 Zij stellen vast dat deze \textit{big data}-omgeving nieuwe mogelijkheden creëert voor tactische en strategische analyse, maar tegelijk ook leidt tot complexiteit en interpretatieproblemen wanneer clubs niet beschikken over geschikte analysemethoden~\autocite{Rein2016}.
 Dit sluit aan bij de vaststelling dat veel voetbalclubs moeite hebben om data effectief te integreren in hun besluitvormingsproces.
 
-Verschillende studies richting zich op het gebruik van prestatie-indicatoren en key performance indicators (KPI's) binnen voetbal.
-Onderzoek toont aan dat statistische indicatoren zoals balbezit, schoten op doel en fysieke inspanningen vaak worden gebruikt om prestaties te evalueren, maar dat deze indicatoren niet altijd voldoende context bieden voor tactische interpretatie.~\autocite{Sarmento2014}
-Daarnaast wordt vastgesteld dat er een kloof bestaat tussen academische ontwikkelde analysetechnieken en de praktische toepassing ervan door coaches en technische staf.
+Verschillende studies richten zich op het gebruik van prestatie-indicatoren en key performance indicators (KPI's) binnen voetbal.
+Onderzoek toont aan dat statistische indicatoren zoals balbezit, schoten op doel en fysieke inspanningen vaak worden gebruikt om prestaties te evalueren, maar dat deze indicatoren niet altijd voldoende context bieden voor tactische interpretatie~\autocite{Sarmento2014}.
+Daarnaast wordt vastgesteld dat er een kloof bestaat tussen academisch ontwikkelde analysetechnieken en de praktische toepassing ervan door coaches en technische staf.
 
-Recente literatuur onderzoekt ook de toepassing van machine learning en geavenceerde analysetechnieken binnen voetbaldata-analyse.
-Pappalardo et al.\ introdceren bijvoorbeeld een framework voor spelersevaluatie op basis van grootschalige wedstrijddata, waarbij multidimensionale prestatieprofielen worden opgesteld~\autocite{Pappalardo2019}.
-Dergelijke benaderingen tontn het potentieel van data-gedreven modellen om objectieve inzichten te genereren maar vereisen vaak een hoge mate van technische expertise en data-infrastructuur, wat niet voor alle voetbalclubs haalbaar is.
+Recente literatuur onderzoekt ook de toepassing van machine learning en geavanceerde analysetechnieken binnen voetbaldata-analyse.
+Pappalardo et al.\ introduceren bijvoorbeeld een framework voor spelersevaluatie op basis van grootschalige wedstrijddata, waarbij multidimensionale prestatieprofielen worden opgesteld~\autocite{Pappalardo2019}.
+Dergelijke benaderingen tonen het potentieel van data-gedreven modellen om objectieve inzichten te genereren, maar vereisen vaak een hoge mate van technische expertise en data-infrastructuur, wat niet voor alle voetbalclubs haalbaar is.
 
 Naast academisch onderzoek benadrukt ook praktijkgerichte literatuur dat datagedreven werken binnen voetbal steeds vaker wordt toegepast.
 Clubs maken gebruik van GPS-tracking, videoanalyse en statistische modellen zoals expected goals (xG) om trainingsbelasting te monitoren en tactische beslissingen te ondersteunen.
 Tegelijkertijd geven praktijkrapporten aan dat vooral kleinere en semi-professionele clubs moeilijkheden ondervinden bij de implementatie van dergelijke systemen, onder meer door beperkte middelen en expertise~\autocite{Gudmundsson2017}.
 
-Samenvattend toont de literatuur aan dat voetbaclubs beschikken over een grote hoeveelheid potentieel waardevolle data maar dat de effectieve benutting ervan sterk afhankelijk is van toegankelijke analysetechnieken, organisatorische randvoorwaarden en praktische toepasbaarheid.
-Deze vaststellingen onderstrepen de nood aan onderzoek dat zich richt op het ontwikkelijken van haalbare, datagedreven oplossingen die aansluiten bij de realiteit van voetbalclubs zibder gespecialiseerde data-afdelingen.
+Samenvattend toont de literatuur aan dat voetbalclubs beschikken over een grote hoeveelheid potentieel waardevolle data, maar dat de effectieve benutting ervan sterk afhankelijk is van toegankelijke analysetechnieken, organisatorische randvoorwaarden en praktische toepasbaarheid.
+Deze vaststellingen onderstrepen de nood aan onderzoek dat zich richt op het ontwikkelen van haalbare, datagedreven oplossingen die aansluiten bij de realiteit van voetbalclubs zonder gespecialiseerde data-afdelingen.
 
 %---------- Methodologie ------------------------------------------------------
 \section{Methodologie}%
@@ -206,7 +206,7 @@ Deze vaststellingen onderstrepen de nood aan onderzoek dat zich richt op het ont
 % Het onderzoek bestaat uit vier fases, die telkens gekoppeld zijn aan specifieke onderzoekstechnieken:
 
 Dit onderzoek volgt een toegepaste, casusgerichte onderzoeksopzet en bestaat uit vier opeenvolgende fases.
-Elke fase is afgestemd op het beantwoorden van de onderzoeksvragen en draagt op zijn beurt bij aan de ontwikkeling van een tehcnisch onderbouwde en praktisch haalbare oplossing voor datagedreven besluitvorming binnen voetbalclubs.
+Elke fase is afgestemd op het beantwoorden van de onderzoeksvragen en draagt op zijn beurt bij aan de ontwikkeling van een technisch onderbouwde en praktisch haalbare oplossing voor datagedreven besluitvorming binnen voetbalclubs.
 
 \subsection*{Fase 1: Analyse van de huidige situatie}
 % \begin{itemize}
@@ -214,11 +214,11 @@ Elke fase is afgestemd op het beantwoorden van de onderzoeksvragen en draagt op 
 %   \item Interviews van vertegenwoordigers of belanghebbenden van minstens twee sportclubs of federaties.
 %   \item Analyse van de soorten data die sportorganisaties momenteel verzamelen.
 % \end{itemize}
-In de eerste fase wordt de huidige situatie omtrent datagebruik binnen voetbaclubs onderzocht.
+In de eerste fase wordt de huidige situatie omtrent datagebruik binnen voetbalclubs onderzocht.
 Dit gebeurt door een uitgebreide literatuurstudie uit te voeren naar bestaande inzichten rond sportdata, datagedreven besluitvorming en relevante analytische frameworks.
 Deze theoretische basis wordt aangevuld met praktijkinformatie door gesprekken te voeren met vertegenwoordigers of belanghebbenden van minstens twee voetbalclubs.
-Tijdens deze interviews wordt onderzocht welke soorten data momenteel worden verzameld (zoals wedstrijdstatistieken, GPS- en trackingdata, trainsingsbelasting en blessuregegevens), hoe deze data worden opgeslagen en in welke mate ze effectief worden gebruikt ter ondersteuning van sportieve en operationele beslissingen.
-Door deze combinatie van literatuur en praktijkobservaties ontstaat een helder beeld van de uitgangspositie en van de mate waarop data vandaag structureel worden ingezet.
+Tijdens deze interviews wordt onderzocht welke soorten data momenteel worden verzameld (zoals wedstrijdstatistieken, GPS- en trackingdata, trainingsbelasting en blessuregegevens), hoe deze data worden opgeslagen en in welke mate ze effectief worden gebruikt ter ondersteuning van sportieve en operationele beslissingen.
+Door deze combinatie van literatuur en praktijkobservaties ontstaat een helder beeld van de uitgangspositie en van de mate waarin data vandaag structureel worden ingezet.
 
 \subsection*{Fase 2: Identificatie van knelpunten en behoeften}
 % \begin{itemize}
@@ -229,7 +229,7 @@ Door deze combinatie van literatuur en praktijkobservaties ontstaat een helder b
 In de tweede fase ligt de nadruk op het identificeren van de voornaamste knelpunten en behoeften die in de interviews naar voren komen.
 De verzamelde gegevens worden thematisch geanalyseerd om zo structurele problemen bloot te leggen, zoals beperkte data-integratie, onvoldoende analytische expertise of het ontbreken van geschikte tools.
 Op basis van deze analyse worden zowel de functionele als technische requirements opgesteld waaraan een haalbaar datamodel of analyseproces moet voldoen.
-Hierbij wordt rekening gehouden met realistische randvoorwaarden zoals beperkte middelen, tijdsdruk en het kennisniveau van de betrokken gebuikers.
+Hierbij wordt rekening gehouden met realistische randvoorwaarden zoals beperkte middelen, tijdsdruk en het kennisniveau van de betrokken gebruikers.
 Deze fase vormt de basis voor de verdere technische uitwerking van een proof-of-concept.
 
 \subsection*{Fase 3: Ontwikkeling van een proof-of-concept}
@@ -245,10 +245,10 @@ Deze fase vormt de basis voor de verdere technische uitwerking van een proof-of-
 %       \end{itemize}
 %   \item Evaluatie van de bruikbaarheid en uitvoerbaarheid voor niet-experts.
 % \end{itemize}
-De derde fase bestaat uit de ontwikkeling van een proof-of-concept dat aantoont hoe voetbaldata op een toegankelijke en reproduceerbare manier geanalyseerd kan worden.
-Hiervoor wordt eene relevante dataset geselecteerd, afkomstig uit een voetbalclub of uit open datasets met wedstrijd- of evendata.
-De data worden eerste voorbewerkt en gestructureerd, waarna verschillende analysetechnieken worden toegepast.
-De analyses focussen op haalbare en interpreteerbare methoden, zoals beschrijvende statistiek, regressiemodellen, clusteringtechnieken en eenvoudige anomaly-detectie voor het signaleren van afwijkende prestratie- of beslatingspatronen.
+De derde fase bestaat uit de ontwikkeling van een proof-of-concept dat aantoont hoe voetbaldata op een toegankelijke en reproduceerbare manier geanalyseerd kunnen worden.
+Hiervoor wordt een relevante dataset geselecteerd, afkomstig uit een voetbalclub of uit open datasets met wedstrijd- of eventdata.
+De data worden eerst voorbewerkt en gestructureerd, waarna verschillende analysetechnieken worden toegepast.
+De analyses focussen op haalbare en interpreteerbare methoden, zoals beschrijvende statistiek, regressiemodellen, clusteringtechnieken en eenvoudige anomaliedetectie voor het signaleren van afwijkende prestatie- of beslissingspatronen.
 De resultaten worden ondersteund door visualisaties en dashboards die worden ontwikkeld in Python met behulp van onder meer pandas, NumPy, scikit-learn en Matplotlib.
 Waar nodig wordt aanvullende tooling zoals PowerBI of Streamlit gebruikt om de interpretatie te verbeteren.
 
@@ -273,7 +273,7 @@ Door de combinatie van academische inzichten en empirische validatie biedt deze 
 \subsection*{Tools en tijdsplanning}
 De technische uitvoering gebeurt voornamelijk in Python met libraries zoals pandas, NumPy, scikit-learn en Matplotlib.
 Voor datavisualisatie kan zowel PowerBI als Streamlit worden gebruikt.
-De totale verwachte doorlooptijd bedraagt ongeveer veertien weken, deze is opgesplitst in onderzoek, ontwikkeling, analyse en rapportering.
+De totale verwachte doorlooptijd bedraagt ongeveer veertien weken. Deze doorlooptijd is opgesplitst in onderzoek, ontwikkeling, analyse en rapportering.
 
 %---------- Verwachte resultaten ----------------------------------------------
 \section{Verwacht resultaat, conclusie}%
@@ -296,13 +296,13 @@ De totale verwachte doorlooptijd bedraagt ongeveer veertien weken, deze is opges
 % \end{itemize}
 
 
-Het onderzoek wordt verwacht een helder en diepgaand inzicht op te leveren in de manier waarop voetbalclubs hun bestaande data efficiënter en effectiever kunnen benutten, zowel ter ondersteuening voor sportieve doeleinden als van operationele en strategische besluitvorming.
-Tijdens de literatuurstudie en de analyse van de huidige praktijken wordt duidelijk welke soorten data vandaag de grootste impact hebben op prestatie-evaluatie, trainginsopvolging en wedstrijdanalyse.
+Het onderzoek wordt verwacht een helder en diepgaand inzicht op te leveren in de manier waarop voetbalclubs hun bestaande data efficiënter en effectiever kunnen benutten, zowel ter ondersteuning voor sportieve doeleinden als van operationele en strategische besluitvorming.
+Tijdens de literatuurstudie en de analyse van de huidige praktijken wordt duidelijk welke soorten data vandaag de grootste impact hebben op prestatie-evaluatie, trainingsopvolging en wedstrijdanalyse.
 Het resultaat van deze fase bestaat uit een overzicht van de meest relevante datatypes binnen het voetbal, zoals wedstrijdstatistieken, tracking- en GPS-data en trainingsbelasting, en een analyse van de manier waarop deze in de praktijk worden gebruikt of onderbenut.
 
-Daarnaast zal het onderzoek een gedetailleerd beeld schetsen van de voornaamste knelpunten waarmee voetbaclubs geconfronteerd worden bij het verwerken, analyseren en interpreteren van hun data.
-Deze knelpunten situeren zicht zowel op technisch vlak, bijvoorbeeld inzake datakwaliteit, data-integratie en beschikbaarheid, als op organisatorisch vlak, waaronder beperkt analytische expertise, tijdsdruk en het ontbreken van geschikte tools.
-Door deze obstakels systematisch in kaart te brengen ontstaat een duidelijk inzicht in de randvoorwaarden die nodig zijn om datagedreven werken binnen voetbaclubs succesvol te implementeren.
+Daarnaast zal het onderzoek een gedetailleerd beeld schetsen van de voornaamste knelpunten waarmee voetbalclubs geconfronteerd worden bij het verwerken, analyseren en interpreteren van hun data.
+Deze knelpunten situeren zich zowel op technisch vlak, bijvoorbeeld inzake datakwaliteit, data-integratie en beschikbaarheid, als op organisatorisch vlak, waaronder beperkte analytische expertise, tijdsdruk en het ontbreken van geschikte tools.
+Door deze obstakels systematisch in kaart te brengen ontstaat een duidelijk inzicht in de randvoorwaarden die nodig zijn om datagedreven werken binnen voetbalclubs succesvol te implementeren.
 
 Een centraal verwacht resultaat is de ontwikkeling van een proof-of-concept dat aantoont hoe relatief eenvoudige, maar goed gekozen analysetechnieken kunnen worden toegepast op voetbaldata om bruikbare inzichten te genereren.
 Dit prototype wordt opgebouwd op basis van realistische of open voetbaldatasets en illustreert hoe data binnen een club gestructureerd, geanalyseerd en gevisualiseerd kunnen worden.
@@ -314,4 +314,4 @@ Door de combinatie van theoretische inzichten, empirische bevindingen en technis
 
 De meerwaarde voor de doelgroep is dan ook aanzienlijk.
 Voetbalclubs krijgen toegang tot een duidelijk, onderbouwd en praktisch toepasbaar kader dat hen in staat stelt betere beslissingen te nemen, hun werking efficiënter te organiseren en hun sportieve prestaties te optimaliseren.
-Op die manier draagt deze bachelorproef bij aan een professiolere en meer datagedreven benadering van prestatieanalyse en besluitvorming binnen het voetbal.
+Op die manier draagt deze bachelorproef bij aan een professionelere en meer datagedreven benadering van prestatieanalyse en besluitvorming binnen het voetbal.
