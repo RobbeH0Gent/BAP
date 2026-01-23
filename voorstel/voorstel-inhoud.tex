@@ -203,7 +203,10 @@ Deze vaststellingen onderstrepen de nood aan onderzoek dat zich richt op het ont
 
 % Probeer ook een tijdschatting te maken. Hoe lang zal je met elke fase van je onderzoek bezig zijn en wat zijn de concrete \emph{deliverables} in elke fase?
 
-Het onderzoek bestaat uit vier fases, die telkens gekoppeld zijn aan specifieke onderzoekstechnieken:
+% Het onderzoek bestaat uit vier fases, die telkens gekoppeld zijn aan specifieke onderzoekstechnieken:
+
+Dit onderzoek volgt een toegepaste, casusgerichte onderzoeksopzet en bestaat uit vier opeenvolgende fases.
+Elke fase is afgestemd op het beantwoorden van de onderzoeksvragen en draagt op zijn beurt bij aan de ontwikkeling van een tehcnisch onderbouwde en praktisch haalbare oplossing voor datagedreven besluitvorming binnen voetbalclubs.
 
 \subsection*{Fase 1: Analyse van de huidige situatie}
 % \begin{itemize}
@@ -211,10 +214,10 @@ Het onderzoek bestaat uit vier fases, die telkens gekoppeld zijn aan specifieke 
 %   \item Interviews van vertegenwoordigers of belanghebbenden van minstens twee sportclubs of federaties.
 %   \item Analyse van de soorten data die sportorganisaties momenteel verzamelen.
 % \end{itemize}
-In de eerste fase wordt de huidige situatie binnen sportorganisaties onderzocht.
+In de eerste fase wordt de huidige situatie omtrent datagebruik binnen voetbaclubs onderzocht.
 Dit gebeurt door een uitgebreide literatuurstudie uit te voeren naar bestaande inzichten rond sportdata, datagedreven besluitvorming en relevante analytische frameworks.
-Deze theoretische basis wordt aangevuld met praktijkinformatie door gesprekken te voeren met vertegenwoordigers of belanghebbenden van minstens twee sportclubs of sportfederaties.
-Tijdens deze interviews wordt nagegaan welke soorten data momenteel worden verzameld, voor welke doeleinden deze gegevens worden gebruikt en in welke mate organisaties reeds ervaring hebben met datagebaseerde besluitvorming.
+Deze theoretische basis wordt aangevuld met praktijkinformatie door gesprekken te voeren met vertegenwoordigers of belanghebbenden van minstens twee voetbalclubs.
+Tijdens deze interviews wordt onderzocht welke soorten data momenteel worden verzameld (zoals wedstrijdstatistieken, GPS- en trackingdata, trainsingsbelasting en blessuregegevens), hoe deze data worden opgeslagen en in welke mate ze effectief worden gebruikt ter ondersteuning van sportieve en operationele beslissingen.
 Door deze combinatie van literatuur en praktijkobservaties ontstaat een helder beeld van de uitgangspositie en van de mate waarop data vandaag structureel worden ingezet.
 
 \subsection*{Fase 2: Identificatie van knelpunten en behoeften}
@@ -224,11 +227,12 @@ Door deze combinatie van literatuur en praktijkobservaties ontstaat een helder b
 %   \item Opstellen van requirements voor een haalbaar datamodel.
 % \end{itemize}
 In de tweede fase ligt de nadruk op het identificeren van de voornaamste knelpunten en behoeften die in de interviews naar voren komen.
-De verzamelde informatie wordt thematisch geanalyseerd, waarna een evaluatie wordt gemaakt van bestaande dataflows, databronnen en de aanwezige expertise binnen de betrokken organisaties.
+De verzamelde gegevens worden thematisch geanalyseerd om zo structurele problemen bloot te leggen, zoals beperkte data-integratie, onvoldoende analytische expertise of het ontbreken van geschikte tools.
 Op basis van deze analyse worden zowel de functionele als technische requirements opgesteld waaraan een haalbaar datamodel of analyseproces moet voldoen.
-Deze fase vormt een cruciale overgang tussen het begrijpen van de huidige situatie en de ontwikkeling van een concreet, technisch onderbouwde oplossing.
+Hierbij wordt rekening gehouden met realistische randvoorwaarden zoals beperkte middelen, tijdsdruk en het kennisniveau van de betrokken gebuikers.
+Deze fase vormt de basis voor de verdere technische uitwerking van een proof-of-concept.
 
-\subsection*{Fase 3: Proof-of-concept en experimentele analyse}
+\subsection*{Fase 3: Ontwikkeling van een proof-of-concept}
 % \begin{itemize}
 %   \item Selectie en preprocessing van sportdata.
 %   \item Toepassen van datagedreven analysetools zoals:
@@ -241,14 +245,14 @@ Deze fase vormt een cruciale overgang tussen het begrijpen van de huidige situat
 %       \end{itemize}
 %   \item Evaluatie van de bruikbaarheid en uitvoerbaarheid voor niet-experts.
 % \end{itemize}
-De derde fase bestaat uit de ontwikkeling van een proof-of-concept waarin wordt onderzocht hoe sportdata op een praktische en haalbare manier kan worden geanalyseerd.
-Eerst wordt relevante data geselecteerd en voorbewerkt, zodat deze klaar is voor analyse.
-Vervolgens worden verschillende analysetechnieken toegepast, waaronder regressiemodellen, clusteringmethoden zoals k-means voor het onderscheiden van spelersprofielen, en anomaly detection om mogelijke blessurerisico's te identificeren.
+De derde fase bestaat uit de ontwikkeling van een proof-of-concept dat aantoont hoe voetbaldata op een toegankelijke en reproduceerbare manier geanalyseerd kan worden.
+Hiervoor wordt eene relevante dataset geselecteerd, afkomstig uit een voetbalclub of uit open datasets met wedstrijd- of evendata.
+De data worden eerste voorbewerkt en gestructureerd, waarna verschillende analysetechnieken worden toegepast.
+De analyses focussen op haalbare en interpreteerbare methoden, zoals beschrijvende statistiek, regressiemodellen, clusteringtechnieken en eenvoudige anomaly-detectie voor het signaleren van afwijkende prestratie- of beslatingspatronen.
 De resultaten worden ondersteund door visualisaties en dashboards die worden ontwikkeld in Python met behulp van onder meer pandas, NumPy, scikit-learn en Matplotlib.
 Waar nodig wordt aanvullende tooling zoals PowerBI of Streamlit gebruikt om de interpretatie te verbeteren.
-Deze fase heeft als doel om inzicht te geven in welke technieken haalbaar, begrijpelijk en bruikbaar zijn voor organisaties die niet over diepgaande data-expertise beschikken.
 
-\subsection*{Fase 4: Uitwerking van een relevant stappenplan}
+\subsection*{Fase 4: Uitwerking van een praktisch stappenplan}
 % \begin{itemize}
 %   \item Samenvatten van succesfactoren uit de literatuur.
 %   \item Integreren van empirische bevindingen
@@ -260,9 +264,11 @@ Deze fase heeft als doel om inzicht te geven in welke technieken haalbaar, begri
 %           \item implementatievolgorde.
 %       \end{itemize}
 % \end{itemize}
-In de vierde en laatste fase wordt op basis van zowel de literatuur als de empirische bevindingen een concreet en toepasbaar stappenplan opgesteld dat sportorganisaties moet helpen hun datagebruik te professionaliseren.
-Dit stappenplan bevat richtlijnen voor databeheer, de selectie van geschikte tools, de rollen en competenties die vereist zijn binnen de organisatie en een realistische volgorde waarin datagedreven processen kunnen worden geïmplementeerd.
-Door theorie en praktijk te integreren, resulteert deze fase in een methode die zowel technisch onderbouwd als praktisch haalbaar is voor kleine en middelgrote sportomgevingen.
+In de vierde en laatste fase worden de inzichten uit de literatuur, interviews en het proof-of-concept samengebracht in een concreet en praktisch stappenplan voor voetbalclubs.
+Dit stappenplan beschrijft hoe clubs op een gefaseerde manier kunnen evolueren naar een meer datagedreven werking.
+
+Het plan omvat richtlijnen voor databeheer, toolselectie, organisatorische rollen en competenties, en een realistische implementatievolgorde.
+Door de combinatie van academische inzichten en empirische validatie biedt deze fase een toepasbare methodologie die aansluit bij de dagelijkse werking van kleine en middelgrote voetbalclubs.
 
 \subsection*{Tools en tijdsplanning}
 De technische uitvoering gebeurt voornamelijk in Python met libraries zoals pandas, NumPy, scikit-learn en Matplotlib.
@@ -290,23 +296,22 @@ De totale verwachte doorlooptijd bedraagt ongeveer veertien weken, deze is opges
 % \end{itemize}
 
 
-Het onderzoek wordt verwacht een helder en diepgaand inzicht op te leveren in de manier waarop sportorganisaties hun bestaande data efficiënter en effectiever kunnen benutten, zowel voor sportieve doeleinden als voor strategische besluitvorming.
-Tijdens de literatuurstudie en de analyse van de huidige praktijken wordt duidelijk welke soorten data vandaag de grootste impact hebben op prestaties, evaluaties en operationele keuzes binnen sportomgevingen.
-Het resultaat van deze fase bestaat uit een overzicht van de meest relevante datatypes en een analyse van de manier waarop deze in de praktijk worden gebruikt of onderbenut.
+Het onderzoek wordt verwacht een helder en diepgaand inzicht op te leveren in de manier waarop voetbalclubs hun bestaande data efficiënter en effectiever kunnen benutten, zowel ter ondersteuening voor sportieve doeleinden als van operationele en strategische besluitvorming.
+Tijdens de literatuurstudie en de analyse van de huidige praktijken wordt duidelijk welke soorten data vandaag de grootste impact hebben op prestatie-evaluatie, trainginsopvolging en wedstrijdanalyse.
+Het resultaat van deze fase bestaat uit een overzicht van de meest relevante datatypes binnen het voetbal, zoals wedstrijdstatistieken, tracking- en GPS-data en trainingsbelasting, en een analyse van de manier waarop deze in de praktijk worden gebruikt of onderbenut.
 
-Daarnaast zal het onderzoek een gedetailleerd beeld schetsen van de voornaamste knelpunten waarmee sportorganisaties te maken hebben bij het verwerken, analyseren en interpreteren van hun data.
-Dit omvat zowel technische uitdagingen, zoals de kwaliteit en structuur van beschikbare datasets, als organisatorische factoren, waaronder beperkte expertise, onvoldoende tooling of gefragmenteerde dataflows.
-Door deze uitdagingen in kaart te brengen ontstaat een duidelijk zicht op de voorwaarden die nodig zijn om datagedreven werken succesvol te implementeren.
+Daarnaast zal het onderzoek een gedetailleerd beeld schetsen van de voornaamste knelpunten waarmee voetbaclubs geconfronteerd worden bij het verwerken, analyseren en interpreteren van hun data.
+Deze knelpunten situeren zicht zowel op technisch vlak, bijvoorbeeld inzake datakwaliteit, data-integratie en beschikbaarheid, als op organisatorisch vlak, waaronder beperkt analytische expertise, tijdsdruk en het ontbreken van geschikte tools.
+Door deze obstakels systematisch in kaart te brengen ontstaat een duidelijk inzicht in de randvoorwaarden die nodig zijn om datagedreven werken binnen voetbaclubs succesvol te implementeren.
 
-De ontwikkeling van het proof-of-concept vormt een cruciaal onderdeel van de verwachte resultaten.
-Dit prototype zal aantonen hoe eenvoudige maar goed gekozen analysetechnieken kunnen worden ingezet om concrete en bruikbare inzichten te genereren op basis van sportdata.
-De bedoeling is dat dit proof-of-concept gebaseerd is op realistische of volledig non-fictieve datasets, zodat het model daadwerkelijk kan tonen hoe data binnen een organisatie gestructureerd, geanalyseerd en geïnterpreteerd kan worden.
-Hierdoor wordt de praktische haalbaarheid van datagedreven werken tastbaar gemaakt, ook voor organisaties die geen uitgebreide technische infrastructuur of expertise bezitten.
+Een centraal verwacht resultaat is de ontwikkeling van een proof-of-concept dat aantoont hoe relatief eenvoudige, maar goed gekozen analysetechnieken kunnen worden toegepast op voetbaldata om bruikbare inzichten te genereren.
+Dit prototype wordt opgebouwd op basis van realistische of open voetbaldatasets en illustreert hoe data binnen een club gestructureerd, geanalyseerd en gevisualiseerd kunnen worden.
+Op die manier wordt de praktische haalbaarheid van datagedreven besluitvorming tastbaar gemaakt, ook voor voetbalclubs die niet beschikken over uitgebreide technische infrastructuur of gespecialiseerde data-analisten.
 
-Tot slot resulteert het onderzoek in een concreet en toepasbaar stappenplan dat sportorganisaties ondersteunt bij het professionaliseren van hun datagebruik.
-Dit stappenplan biedt richtlijnen voor databeheer, toolselectie, procesinrichting en de ontwikkeling van benodigde competenties.
-Door de combinatie van theoretische inzichten, empirische bevindingen en technische validatie biedt het onderzoek een waardevolle leidraad voor sportorganisaties die op een systematische, haalbare en duurzame manier datagedreven willen gaan werken.
+Tot slot resulteert het onderzoek in een concreet en toepasbaar stappenplan dat voetbalclubs ondersteunt bij het professionaliseren van hun datagebruik.
+Dit stappenplan biedt richtlijnen voor databeheer, toolselectie, procesinrichting en de ontwikkeling van benodigde competenties binnen de club.
+Door de combinatie van theoretische inzichten, empirische bevindingen en technische validatie fungeert dit stappenplan als een haalbare leidraad voor voetbalclubs die op een gestructureerde en duurzame manier datagedreven willen gaan werken.
 
 De meerwaarde voor de doelgroep is dan ook aanzienlijk.
-Sportclubs en sportfederaties krijgen toegang tot een duidelijk, onderbouwd en praktisch toepasbaar kader dat hen in staat stelt betere beslissingen te nemen, hun werking efficiënter te organiseren en hun sportieve prestaties te optimaliseren.
-Op die manier draagt het onderzoek bij aan een professionelere en meer datagedreven sportsector.
+Voetbalclubs krijgen toegang tot een duidelijk, onderbouwd en praktisch toepasbaar kader dat hen in staat stelt betere beslissingen te nemen, hun werking efficiënter te organiseren en hun sportieve prestaties te optimaliseren.
+Op die manier draagt deze bachelorproef bij aan een professiolere en meer datagedreven benadering van prestatieanalyse en besluitvorming binnen het voetbal.
