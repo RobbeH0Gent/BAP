@@ -372,7 +372,7 @@
         \newfontfamily\subtitlefont{Montserrat}[
             Path = ../fonts/Montserrat/,
             Extension = .otf,
-            UprightFont = *-ExtraBold, %% Force extra bold
+            UprightFont=*-ExtraBold, %% Force extra bold
             BoldFont=*-ExtraBold,
             ItalicFont=*-ExtraBoldItalic,
             BoldItalicFont= *-ExtraBoldItalic]

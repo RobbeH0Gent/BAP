@@ -7,45 +7,113 @@
 
 % Pas na deze inleidende paragraaf komt de eerste sectiehoofding.
 
-Dit hoofdstuk bevat je literatuurstudie. De inhoud gaat verder op de inleiding, maar zal het onderwerp van de bachelorproef *diepgaand* uitspitten. De bedoeling is dat de lezer na lezing van dit hoofdstuk helemaal op de hoogte is van de huidige stand van zaken (state-of-the-art) in het onderzoeksdomein. Iemand die niet vertrouwd is met het onderwerp, weet nu voldoende om de rest van het verhaal te kunnen volgen, zonder dat die er nog andere informatie moet over opzoeken \autocite{Pollefliet2011}.
+% Dit hoofdstuk bevat je literatuurstudie. De inhoud gaat verder op de inleiding, maar zal het onderwerp van de bachelorproef *diepgaand* uitspitten. De bedoeling is dat de lezer na lezing van dit hoofdstuk helemaal op de hoogte is van de huidige stand van zaken (state-of-the-art) in het onderzoeksdomein. Iemand die niet vertrouwd is met het onderwerp, weet nu voldoende om de rest van het verhaal te kunnen volgen, zonder dat die er nog andere informatie moet over opzoeken \autocite{Pollefliet2011}.
 
-Je verwijst bij elke bewering die je doet, vakterm die je introduceert, enz.\ naar je bronnen. In \LaTeX{} kan dat met het commando \texttt{$\backslash${textcite\{\}}} of \texttt{$\backslash${autocite\{\}}}. Als argument van het commando geef je de ``sleutel'' van een ``record'' in een bibliografische databank in het Bib\LaTeX{}-formaat (een tekstbestand). Als je expliciet naar de auteur verwijst in de zin (narratieve referentie), gebruik je \texttt{$\backslash${}textcite\{\}}. Soms is de auteursnaam niet expliciet een onderdeel van de zin, dan gebruik je \texttt{$\backslash${}autocite\{\}} (referentie tussen haakjes). Dit gebruik je bv.~bij een citaat, of om in het bijschrift van een overgenomen afbeelding, broncode, tabel, enz. te verwijzen naar de bron. In de volgende paragraaf een voorbeeld van elk.
+% Je verwijst bij elke bewering die je doet, vakterm die je introduceert, enz.\ naar je bronnen. In \LaTeX{} kan dat met het commando \texttt{$\backslash${textcite\{\}}} of \texttt{$\backslash${autocite\{\}}}. Als argument van het commando geef je de ``sleutel'' van een ``record'' in een bibliografische databank in het Bib\LaTeX{}-formaat (een tekstbestand). Als je expliciet naar de auteur verwijst in de zin (narratieve referentie), gebruik je \texttt{$\backslash${}textcite\{\}}. Soms is de auteursnaam niet expliciet een onderdeel van de zin, dan gebruik je \texttt{$\backslash${}autocite\{\}} (referentie tussen haakjes). Dit gebruik je bv.~bij een citaat, of om in het bijschrift van een overgenomen afbeelding, broncode, tabel, enz. te verwijzen naar de bron. In de volgende paragraaf een voorbeeld van elk.
 
-\textcite{Knuth1998} schreef een van de standaardwerken over sorteer- en zoekalgoritmen. Experten zijn het erover eens dat cloud computing een interessante opportuniteit vormen, zowel voor gebruikers als voor dienstverleners op vlak van informatietechnologie~\autocite{Creeger2009}.
+% \textcite{Knuth1998} schreef een van de standaardwerken over sorteer- en zoekalgoritmen. Experten zijn het erover eens dat cloud computing een interessante opportuniteit vormt, zowel voor gebruikers als voor dienstverleners op vlak van informatietechnologie~\autocite{Creeger2009}.
 
-Let er ook op: het \texttt{cite}-commando voor de punt, dus binnen de zin. Je verwijst meteen naar een bron in de eerste zin die erop gebaseerd is, dus niet pas op het einde van een paragraaf.
+% Let er ook op: het \texttt{cite}-commando voor de punt, dus binnen de zin. Je verwijst meteen naar een bron in de eerste zin die erop gebaseerd is, dus niet pas op het einde van een paragraaf.
 
-\begin{figure}
-  \centering
-  \includegraphics[width=0.8\textwidth]{grail.jpg}
-  \caption[Voorbeeld figuur.]{\label{fig:grail}Voorbeeld van invoegen van een figuur. Zorg altijd voor een uitgebreid bijschrift dat de figuur volledig beschrijft zonder in de tekst te moeten gaan zoeken. Vergeet ook je bronvermelding niet!}
-\end{figure}
+In dit hoofdstuk wordt de stand van zaken geschetst rond datagedreven besluitvorming in voetbalclubs. Eerst wordt toegelicht welke types voetbaldata vandaag courant zijn en welke rol ze spelen in prestatie- en organisatiecontext.
+Vervolgens worden typische analysetechnieken en prestatie-indicatoren besproken, met aandacht voor de kloof tussen academische methoden en praktische toepasbaarheid.
+Tot slot worden de belangrijkste implementatie-uitdagingen (datakwaliteit, integratie, expertise, workflow) samengebracht, omdat deze factoren bepalen of data effectief benut kan worden binnen clubs.
 
-\begin{listing}
-  \begin{minted}{python}
-    import pandas as pd
-    import seaborn as sns
+\section{Voetbaldata: types en kenmerken}
 
-    penguins = sns.load_dataset('penguins')
-    sns.relplot(data=penguins, x="flipper_length_mm", y="bill_length_mm", hue="species")
-  \end{minted}
-  \caption[Voorbeeld codefragment]{Voorbeeld van het invoegen van een codefragment.}
-\end{listing}
+Voetbaldata kan ruwweg worden onderverdeeld in (1) eventdata, (2) trackingdata/spatio-temporele data en (3) context- en medische/fysieke data.
+Eventdata beschrijft discrete gebeurtenissen tijdens een wedstrijd (bv. passen, schoten, fouten) met tijdstip en locatie.
+Trackingdata registreert continu de posities en bewegingen van spelers en bal doorheen de tijd.
+In combinatie maken deze datastromen het mogelijk om niet enkel \emph{wat} er gebeurt te analyseren, maar ook \emph{waarom} en \emph{in welke context} acties ontstaan (ruimte, druk, teamstructuur)~\autocite{Gudmundsson2017}.
 
-\lipsum[7-20]
+Door de toename van tracking- en sensortechnologie is de hoeveelheid beschikbare data sterk gegroeid, maar dat creëert ook complexiteit: zonder methodologische richtlijnen en zonder geschikte processen kan "meer data" zelfs een obstakel worden voor analyse en besluitvorming~\autocite{Rein2016}.
 
-\begin{table}
-  \centering
-  \begin{tabular}{lcr}
-    \toprule
-    \textbf{Kolom 1} & \textbf{Kolom 2} & \textbf{Kolom 3} \\
-    $\alpha$         & $\beta$          & $\gamma$         \\
-    \midrule
-    A                & 10.230           & a                \\
-    B                & 45.678           & b                \\
-    C                & 99.987           & c                \\
-    \bottomrule
-  \end{tabular}
-  \caption[Voorbeeld tabel]{\label{tab:example}Voorbeeld van een tabel.}
-\end{table}
+% Aangezien mijn copromotor geen antwoord meer geeft en ik dus ook geen mogelijkheid heb om in de dataset te kijken
+\subsection{Beschikbaarheid van (open) datasets}
+
+Een praktische uitdaging in sportanalytics-onderzoek is dat hoogwaardige data vaak eigendom is van commerciële aanbieders.
+Toch bestaan er open of publiek beschikbare datasets die onderzoek en proof-of-concepts mogelijk maken.
+Een belangrijk voorbeeld is \textit{StatsBomb Open Data}, dat gedetailleerde eventdata publiek aanbiedt voor onderzoeksdoeleinden~\autocite{StatsBombOpenData}.
+Voor tracking- en eventdata samen bestaan er ook publiek beschikbare datasets, zoals beschreven door~\autocite{Pappalardo2019}.
+
+Deze open datasets zijn relevant als (tijdelijke) fallback wanneer clubdata niet tijdig beschikbaar is, maar ook als benchmark om methodes reproduceerbaar te testen.
+
+\section{Datagedreven besluitvorming in sportcontext}
+
+Sportanalytics kan worden gezien als het systematisch inzetten van data-analyse om sportieve en organisatorische beslissingen te ondersteunen.
+Belangrijk daarbij is dat de waarde niet enkel in modellen of statistiek zit, maar in de vertaling naar beslissingen en processen die aansluiten bij de dagelijkse werking van coaches en staf~\autocite{Alamar2013}.
+In voetbalcontext betekent dit onder meer: prestatie-evaluatie, training load monitoring, scouting/teamanalyse en het evalueren van tactische patronen.
+
+Literatuur wijst erop dat er een kloof kan bestaan tussen academische vooruitgang en praktische implementatie. Onder meer door gebrek aan expertise, beperkte middelen en gefragmenteerde dataopslag blijven methodes vaak steken in prototypes die moeilijk te integreren zijn in clubworkflows~\autocite{Rein2016}.
+
+\section{Analysebenaderingen en prestatie-indicatoren}
+
+\subsection{Matchanalyse en KPI's}
+
+Matchanalyse gebruikt vaak indicatoren zoals balbezit, schoten, passnauwkeurigheid en fysieke inspanningen.
+Systematische reviews tonen dat matchanalyse een breed onderzoeksveld is met uiteenlopende methodes, maar ook dat interpretatie sterk afhankelijk is van context (tegenstander, wedstrijdsituatie, tactiek)~\autocite{Sarmento2014}.
+Voor clubs is het daarom belangrijk KPI's niet als absolute waarheden te zien, maar als signalen die consistent en in context gebruikt moeten worden.
+
+\subsection{Expected goals (xG) en probabilistische metrics}
+
+Expected goals (xG) is een bekende probabilistische maat die aan schoten een scoringskans toekent en wordt vaak gebruikt om prestaties minder afhankelijk te maken van toeval.
+Dergelijke probabilistische benaderingen illustreren hoe eventdata kunnen worden vertaald naar verfijnde prestatie-indicatoren~\autocite{Pappalardo2019}.
+
+\subsection{Spatio-temporele analyse}
+
+Trackingdata maakt het mogelijk om ruimtegebruik, pressing, compactheid en looplijnen te analyseren.
+Surveys in de literatuur beschrijven spatio-temporele analyse als een rijk domein, maar benadrukken ook dat de stap van data naar bruikbare inzichten methodologisch niet triviaal is~\autocite{Gudmundsson2017}.
+Dit sluit aan bij de praktijkuitdaging: clubs hebben vaak niet alleen analyse-algoritmen nodig, maar vooral een werkbare pipeline (data inlezen, opschonen, definities uniformiseren, output rapporteren).
+
+\section{Van data naar implementatie: processen en uitdagingen}
+
+\subsection{Datakwaliteit, integratie en fragmentatie}
+
+In clubcontext is data vaak verspreid over platformen (GPS-tool, medisch dossier, wedstrijdstatistieken, Excel-bestanden), waardoor integratie en consistentie problematisch worden.
+Datakwaliteit (missende waarden, verschillende definities, meetfouten) beïnvloedt rechtstreeks de betrouwbaarheid van analyses.
+De literatuur over big data in voetbal benadrukt dat de hoeveelheid data pas nuttig wordt wanneer clubs methodologische en organisatorische structuren opzetten om die data te verwerken~\autocite{Rein2016}.
+
+\subsection{Procesmatige aanpak (CRISP-DM als referentiekader)}
+
+Om dataprojecten hanteerbaar te maken, gebruiken veel domeinen procesmodellen zoals CRISP-DM, met fasen zoals business understanding, data understanding, data preparation, modeling, evaluation en deployment~\autocite{CRISPDM2000}.
+In voetbalcontext kan dit kader helpen om analyses te koppelen aan clubdoelen en om te vermijden dat men meteen modelleert zonder heldere vraag of zonder datavoorbereiding.
+
+\subsection{Synthese: implicaties}
+
+De literatuur toont dat voetbalclubs over potentieel waardevolle data beschikken, maar dat effectieve benutting afhankelijk is van (1) datakwaliteit en integratie, (2) haalbare analysetechnieken en (3) organisatorische inbedding~\autocite{Alamar2013}.
+Vanuit die inzichten is het logisch om niet enkel een technisch prototype te bouwen, maar ook een concreet stappenplan dat rekening houdt met realistische randvoorwaarden binnen clubs zonder gespecialiseerde data-afdeling.
+
+% \begin{figure}
+%   \centering
+%   \includegraphics[width=0.8\textwidth]{grail.jpg}
+%   \caption[Voorbeeld figuur.]{\label{fig:grail}Voorbeeld van invoegen van een figuur. Zorg altijd voor een uitgebreid bijschrift dat de figuur volledig beschrijft zonder in de tekst te moeten gaan zoeken. Vergeet ook je bronvermelding niet!}
+% \end{figure}
+
+% \begin{listing}
+%   \begin{minted}{python}
+%     import pandas as pd
+%     import seaborn as sns
+
+%     penguins = sns.load_dataset('penguins')
+%     sns.relplot(data=penguins, x="flipper_length_mm", y="bill_length_mm", hue="species")
+%   \end{minted}
+%   \caption[Voorbeeld codefragment]{Voorbeeld van het invoegen van een codefragment.}
+% \end{listing}
+
+% \lipsum[7-20]
+
+% \begin{table}
+%   \centering
+%   \begin{tabular}{lcr}
+%     \toprule
+%     \textbf{Kolom 1} & \textbf{Kolom 2} & \textbf{Kolom 3} \\
+%     $\alpha$         & $\beta$          & $\gamma$         \\
+%     \midrule
+%     A                & 10.230           & a                \\
+%     B                & 45.678           & b                \\
+%     C                & 99.987           & c                \\
+%     \bottomrule
+%   \end{tabular}
+%   \caption[Voorbeeld tabel]{\label{tab:example}Voorbeeld van een tabel.}
+% \end{table}
 

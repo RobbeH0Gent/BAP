@@ -5,32 +5,64 @@
 \chapter{\IfLanguageName{dutch}{Inleiding}{Introduction}}%
 \label{ch:inleiding}
 
-De inleiding moet de lezer net genoeg informatie verschaffen om het onderwerp te begrijpen en in te zien waarom de onderzoeksvraag de moeite waard is om te onderzoeken. In de inleiding ga je literatuurverwijzingen beperken, zodat de tekst vlot leesbaar blijft. Je kan de inleiding verder onderverdelen in secties als dit de tekst verduidelijkt. Zaken die aan bod kunnen komen in de inleiding~\autocite{Pollefliet2011}:
+Voetbalclubs verzamelen vandaag meer data dan ooit tevoren. Naast klassieke wedstrijdstatistieken gaat het om GPS- en trackinggegevens, trainingsbelasting, medische of fysieke meetwaarden en gedetailleerde eventdata (passen, duels, schoten, \dots).
+In theorie kan deze datastroom coaches en staf helpen om beslissingen te onderbouwen rond prestatieoptimalisatie, blessurepreventie en tactische evaluatie.
+In de praktijk blijkt echter dat het louter verzamelen van data niet automatisch leidt tot betere prestaties: de meerwaarde ontstaat pas wanneer data op een gestructureerde manier worden beheerd, geanalyseerd en vertaald naar bruikbare inzichten voor de dagelijkse werking van een club~\autocite{Alamar2013}.
 
-\begin{itemize}
-  \item context, achtergrond
-  \item afbakenen van het onderwerp
-  \item verantwoording van het onderwerp, methodologie
-  \item probleemstelling
-  \item onderzoeksdoelstelling
-  \item onderzoeksvraag
-  \item \ldots
-\end{itemize}
+Tegelijk is er een duidelijk spanningsveld tussen (1) de groeiende beschikbaarheid van datatools en analysetechnieken en (2) de realiteit binnen veel (kleine tot middelgrote) voetbalomgevingen, waar tijd, middelen en gespecialiseerde data-expertise beperkt zijn.
+Daardoor blijven kansen liggen: clubs beschikken vaak wel over relevante data, maar benutten die onvoldoende of inconsistent, waardoor beslissingen alsnog vooral op intuïtie, fragmentaire informatie of niet-gestandaardiseerde analyses steunen~\autocite{Rein2016}.
+
+Deze bachelorproef vertrekt vanuit deze vaststelling en onderzoekt hoe voetbalclubs hun \emph{bestaande} data optimaler kunnen inzetten. De focus ligt dus niet op "meer data verzamelen", maar op het professioneler organiseren en toepassen van data die al beschikbaar is (of realistisch beschikbaar kan zijn).
+Het einddoel is een praktisch bruikbaar stappenplan en een proof-of-concept (PoC) dat toont hoe inzichten op een reproduceerbare en toegankelijke manier gegenereerd kunnen worden.
+
+% \begin{itemize}
+%   \item context, achtergrond
+%   \item afbakenen van het onderwerp
+%   \item verantwoording van het onderwerp, methodologie
+%   \item probleemstelling
+%   \item onderzoeksdoelstelling
+%   \item onderzoeksvraag
+%   \item \ldots
+% \end{itemize}
 
 \section{\IfLanguageName{dutch}{Probleemstelling}{Problem Statement}}%
 \label{sec:probleemstelling}
 
-Uit je probleemstelling moet duidelijk zijn dat je onderzoek een meerwaarde heeft voor een concrete doelgroep. De doelgroep moet goed gedefinieerd en afgelijnd zijn. Doelgroepen als ``bedrijven,'' ``KMO's'', systeembeheerders, enz.~zijn nog te vaag. Als je een lijstje kan maken van de personen/organisaties die een meerwaarde zullen vinden in deze bachelorproef (dit is eigenlijk je steekproefkader), dan is dat een indicatie dat de doelgroep goed gedefinieerd is. Dit kan een enkel bedrijf zijn of zelfs één persoon (je co-promotor/opdrachtgever).
+Veel voetbalclubs hebben de voorbije jaren geïnvesteerd in databronnen (bijvoorbeeld wedstrijd- en trainingsstatistieken, GPS, tracking, medische opvolging), maar halen onvoldoende rendement uit die informatie.
+Deze onderbenutting heeft zowel sportieve als organisatorische gevolgen: trainings- en wedstrijdkeuzes worden minder onderbouwd, signalen rond belasting of prestatie-evolutie worden mogelijk te laat opgemerkt, en data blijft verspreid over verschillende tools, bestanden of personen, waardoor kennis niet schaalbaar of overdraagbaar is~\autocite{Rein2016}.
+
+De doelgroep van deze bachelorproef bestaat uit clubs die reeds data verzamelen of data ter beschikking hebben, maar moeilijkheden ervaren bij het verwerken, analyseren en interpreteren ervan.
+Het gaat in het bijzonder om clubs zonder uitgebouwde data-afdeling of zonder fulltime data-analist, waar de implementatiedrempel (tijd, expertise, tooling) hoog blijft~\autocite{Alamar2013}.
 
 \section{\IfLanguageName{dutch}{Onderzoeksvraag}{Research question}}%
 \label{sec:onderzoeksvraag}
 
-Wees zo concreet mogelijk bij het formuleren van je onderzoeksvraag. Een onderzoeksvraag is trouwens iets waar nog niemand op dit moment een antwoord heeft (voor zover je kan nagaan). Het opzoeken van bestaande informatie (bv. ``welke tools bestaan er voor deze toepassing?'') is dus geen onderzoeksvraag. Je kan de onderzoeksvraag verder specifiëren in deelvragen. Bv.~als je onderzoek gaat over performantiemetingen, dan 
+De centrale onderzoeksvraag luidt:
+
+\begin{quote}
+  \textbf{Hoe kunnen voetbalclubs hun bestaande data optimaler inzetten om de kwaliteit van besluitvorming en sportprestaties te verbeteren?}
+\end{quote}
+
+Om deze onderzoeksvraag behapbaar te maken, worden de volgende deelvragen onderzocht:
+
+\begin{enumerate}
+  \item \textbf{Welke soorten data verzamelen voetbalclubs vandaag en hoe worden die momenteel gebruikt?}
+  \item \textbf{Welke knelpunten ervaren clubs bij het verwerken, analyseren en interpreteren van die data (technisch en organisatorisch)?}
+  \item \textbf{Welke analysetechnieken en tools zijn haalbaar en bruikbaar voor clubs met beperkte data-expertise?}
+  \item \textbf{Welke succesfactoren bepalen of datagedreven werken duurzaam ingebed raakt in processen en rollen binnen een club?}
+\end{enumerate}
 
 \section{\IfLanguageName{dutch}{Onderzoeksdoelstelling}{Research objective}}%
 \label{sec:onderzoeksdoelstelling}
 
-Wat is het beoogde resultaat van je bachelorproef? Wat zijn de criteria voor succes? Beschrijf die zo concreet mogelijk. Gaat het bv.\ om een proof-of-concept, een prototype, een verslag met aanbevelingen, een vergelijkende studie, enz.
+De doelstelling van deze bachelorproef is tweeledig:
+
+\begin{itemize}
+  \item \textbf{Praktisch:} een concreet en toepasbaar stappenplan uitwerken waarmee voetbalclubs hun datagebruik gefaseerd kunnen professionaliseren (databeheer, toolkeuzes, rollen, implementatievolgorde).
+  \item \textbf{Technisch:} een \textbf{proof-of-concept} ontwikkelen (in Python) die aantoont hoe een selectie van relevante voetbaldata kan worden opgeschoond, gestructureerd, geanalyseerd en gevisualiseerd met interpreteerbare technieken (bv.\ beschrijvende analyses, eenvoudige modellen, clustering of anomaliedetectie), zodat inzichten reproduceerbaar worden.
+\end{itemize}
+
+Succes wordt beoordeeld op basis van (1) de mate waarin het stappenplan concreet, gefaseerd en realistisch toepasbaar is in clubs met beperkte middelen, en (2) de mate waarin de PoC transparant, reproduceerbaar en begrijpelijk is voor niet-specialisten (met een duidelijke output, visualisaties en documentatie).
 
 \section{\IfLanguageName{dutch}{Opzet van deze bachelorproef}{Structure of this bachelor thesis}}%
 \label{sec:opzet-bachelorproef}
@@ -41,10 +73,10 @@ Wat is het beoogde resultaat van je bachelorproef? Wat zijn de criteria voor suc
 
 De rest van deze bachelorproef is als volgt opgebouwd:
 
-In Hoofdstuk~\ref{ch:stand-van-zaken} wordt een overzicht gegeven van de stand van zaken binnen het onderzoeksdomein, op basis van een literatuurstudie.
+In Hoofdstuk~\ref{ch:stand-van-zaken} wordt de stand van zaken besproken rond voetbaldata, sportanalytics en datagedreven besluitvorming, met aandacht voor datatypes, analysetechnieken, tooling en implementatie-uitdagingen.
 
-In Hoofdstuk~\ref{ch:methodologie} wordt de methodologie toegelicht en worden de gebruikte onderzoekstechnieken besproken om een antwoord te kunnen formuleren op de onderzoeksvragen.
+In Hoofdstuk~\ref{ch:methodologie} wordt de onderzoeksopzet toegelicht: hoe de literatuurstudie, praktijkbevraging (interviews/gesprekken), requirements- en knelpuntanalyse, de ontwikkeling van de proof-of-concept en de synthese naar een stappenplan worden uitgevoerd.
 
 % TODO: Vul hier aan voor je eigen hoofstukken, één of twee zinnen per hoofdstuk
 
-In Hoofdstuk~\ref{ch:conclusie}, tenslotte, wordt de conclusie gegeven en een antwoord geformuleerd op de onderzoeksvragen. Daarbij wordt ook een aanzet gegeven voor toekomstig onderzoek binnen dit domein.
+In Hoofdstuk~\ref{ch:conclusie} ten slotte worden de conclusies geformuleerd en wordt een antwoord gegeven op de onderzoeksvragen. Daarbij wordt ook besproken welke beperkingen er zijn en welke pistes relevant zijn voor toekomstig onderzoek.
